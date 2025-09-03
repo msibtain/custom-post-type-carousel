@@ -1,0 +1,109 @@
+.cpt-carousel {
+	position: relative;
+}
+
+.cpt-carousel .cpt-carousel-track {
+	display: block;
+}
+
+.cpt-carousel-item {
+	box-sizing: border-box;
+}
+
+.cpt-carousel-card {
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+	overflow: hidden;
+}
+
+.cpt-carousel-thumb img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.cpt-carousel-title {
+	font-size: 1rem;
+	margin: 12px 14px;
+}
+
+.cpt-carousel-excerpt {
+	font-size: .9rem;
+	color: #555;
+	margin: 0 14px 14px;
+}
+
+/* Tiny Slider integration */
+.cpt-carousel.tns-initialized .cpt-carousel-track {
+	display: block;
+}
+
+.cpt-carousel.tns-initialized .cpt-carousel-item {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0;
+}
+
+/* Tiny Slider controls styling */
+.tns-outer {
+	padding: 0 !important;
+}
+
+.tns-controls {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.tns-controls [data-controls] {
+	background: #111;
+	color: #fff;
+	border: none;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	box-shadow: 0 2px 6px rgba(0,0,0,.2);
+	cursor: pointer;
+	font-size: 18px;
+	line-height: 1;
+	margin: 0 10px;
+	transition: all 0.3s ease;
+}
+
+.tns-controls [data-controls]:hover {
+	background: #333;
+	transform: scale(1.1);
+}
+
+.tns-nav {
+	text-align: center;
+	margin-top: 15px;
+}
+
+.tns-nav > [data-nav] {
+	background: #ccc;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	border: none;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.tns-nav > .tns-nav-active {
+	background: #111;
+	transform: scale(1.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+	.tns-controls [data-controls] {
+		width: 35px;
+		height: 35px;
+		font-size: 16px;
+		margin: 0 5px;
+	}
+}
+
+
